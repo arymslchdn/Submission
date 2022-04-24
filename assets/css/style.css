@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111727;
+}
+
+
+/* Navbar */
+nav {
+    display: flex;
+    background: #f4f3f3;
+    height: 7vh;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    flex: 50%;
+}
+
+nav div.left-side {
+    padding-left: 90px;
+}
+
+nav div.right-side {
+    padding-right: 90px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav ul li a.list-active {
+    color: #051158;
+    font-weight: 700;
+}
+
+nav .right-side a {
+    font-size: 15px;
+    padding: 8px 20px;
+    background-color: #051158;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* CARD CLASS IN INDEX START */
+.out-card {
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.304);
+    border-radius: 10px;
+    margin: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media (max-width: 600px) {
+    .out-card {
+        flex-direction: column;
+    }
+}
+
+.content-card-left {
+    justify-content: flex-left;
+    align-items: flex-end;
+    flex: 60%;
+    margin-top: 100px;
+    margin-left: 70px;
+    margin-bottom: 50px;
+
+}
+
+.content-card-left .text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    word-spacing: 3px;
+    line-height: 130%;
+
+}
+
+.content-card-right {
+    justify-content: flex-right;
+    align-items: flex-start;
+    flex: 40%;
+    padding: 50px;
+
+}
+
+.content-card-right img {
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+
+.card-profile {
+    background-color: #f8f5f5;
+    border-radius: 10px;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.304);
+    margin-top: 50px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+.content {
+    padding: 5% 10%;
+    background-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+.card-profile p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.card-profile h1 small {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.contact-button {
+    margin-top: 20px;
+    border: none;
+    background-color: #111727;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 30px;
+    font-size: 25px;
+    display: inline;
+}
+
+.cv {
+    margin-top: 10px;
+    font-size: 25px;
+    display: inline;
+
+}
+
+.cv p {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.cv button,
+p {
+    display: inline;
+}
+
+.cv button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* CARD CLASS IN INDEX END */
+
+/* ICON CLASS START */
+.icon-logo {
+    margin-top: 50px;
+    font-size: 55px;
+}
+
+.icon-logo a i {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.icon-logo a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* ICON CLASS END */
+
+/* Contact */
+.container-form {
+    display: flex;
+    height: 93vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+    color: #E4E4E4;
+}
+
+.container-form form input,
+select,
+textarea {
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 18px;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.355);
+}
+
+
+.container-form form select option {
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.container-form form textarea {
+    height: 200px;
+    resize: none;
+}
+
+.container-form form select {
+    background-position-x: 100%;
+    background-size: 43px 43px;
+}
+
+.container-form form label {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.container-form h1 {
+    text-align: center;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.container-form form button {
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #dedfe0;
+    color: rgb(12, 22, 54);
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.container-form form .button {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.container-form .input-file input {
+    background-color: white;
+}
+
+.container-form .input-file input[type=file]::-webkit-file-upload-button {
+    border: none;
+    border-radius: 10px;
+    background-color: #E4E4E4;
+    cursor: pointer;
+    padding: 5px 20px;
+}
+
+/* CONTACT FROM END */
